@@ -99,7 +99,7 @@ function LoginPage({ onLogin }) {
     <div className="login-shell">
       <div className="login-grain" />
       <header className="login-header">
-        <div className="brand-lockup"><BrandMark /><div><strong>ACRM<span> / </span>SECTION C</strong><small>STUDENT + FACULTY SUPPORT SYSTEM</small></div></div>
+        <div className="brand-lockup"><BrandMark /><div><strong>UP_TO_DATE<span> / </span>SECTION C</strong><small>STUDENT + FACULTY SUPPORT SYSTEM</small></div></div>
         <div className="header-system"><span className="live-dot" /> SYSTEM READY <span className="header-divider" /> v1.1.0</div>
       </header>
       <main className="login-main">
@@ -117,7 +117,7 @@ function LoginPage({ onLogin }) {
         <div className="login-visual">
           <OrbitalScene />
           <div className="orbit-tag tag-top"><span className="tag-pulse" /> STUDENT / FACULTY / ADMIN</div>
-          <div className="orbit-tag tag-bottom"><span className="tag-code">ACRM</span><span>CONNECTED BY CARE</span></div>
+          <div className="orbit-tag tag-bottom"><span className="tag-code">UP_TO_DATE</span><span>CONNECTED BY CARE</span></div>
           <div className="visual-center-text"><span>SECTION C</span><b>YOUR SPACE.<br />YOUR PROGRESS.</b></div>
         </div>
         <section className="login-card-wrap">
@@ -126,7 +126,7 @@ function LoginPage({ onLogin }) {
             <div className="login-role-switch"><button type="button" className={role === 'student' ? 'selected' : ''} onClick={() => changeRole('student')}><UserRound size={14} /> Student</button><button type="button" className={role === 'teacher' ? 'selected' : ''} onClick={() => changeRole('teacher')}><GraduationCap size={14} /> Teacher</button></div>
             <div className="login-card-heading">
               <div className="login-avatar">{role === 'student' ? <UserRound size={23} /> : <GraduationCap size={23} />}</div>
-              <div><h2>{step === 'identify' ? (role === 'student' ? 'Welcome to ACRM' : 'Faculty access') : step === 'setup' ? 'Create your password' : 'Welcome back'}</h2><p>{step === 'identify' ? (role === 'student' ? 'Verify your Section C identity to continue.' : 'Enter your name and subject code to continue.') : step === 'setup' ? 'This is a one-time step for your account.' : 'Your account is registered. Sign in to continue.'}</p></div>
+              <div><h2>{step === 'identify' ? (role === 'student' ? 'Welcome to UpToDate' : 'Faculty access') : step === 'setup' ? 'Create your password' : 'Welcome back'}</h2><p>{step === 'identify' ? (role === 'student' ? 'Verify your Section C identity to continue.' : 'Enter your name and subject code to continue.') : step === 'setup' ? 'This is a one-time step for your account.' : 'Your account is registered. Sign in to continue.'}</p></div>
             </div>
             {step === 'identify' ? (
               <form onSubmit={handleIdentify} className="login-form">
